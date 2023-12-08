@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.java.com.parkit.parkingsystem.ParkingServiceTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.142 s - in test.java.com.parkit.parkingsystem.ParkingServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.412 s - in test.java.com.parkit.parkingsystem.ParkingServiceTest

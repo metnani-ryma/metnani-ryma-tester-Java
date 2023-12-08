@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.java.com.parkit.parkingsystem.FareCalculatorServiceTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 s - in test.java.com.parkit.parkingsystem.FareCalculatorServiceTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s - in test.java.com.parkit.parkingsystem.FareCalculatorServiceTest
