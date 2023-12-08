@@ -1,9 +1,9 @@
-package com.parkit.parkingsystem.dao;
+package main.java.com.parkit.parkingsystem.dao;
 
-import com.parkit.parkingsystem.config.DataBaseConfig;
-import com.parkit.parkingsystem.constants.DBConstants;
-import com.parkit.parkingsystem.constants.ParkingType;
-import com.parkit.parkingsystem.model.ParkingSpot;
+import main.java.com.parkit.parkingsystem.config.DataBaseConfig;
+import main.java.com.parkit.parkingsystem.constants.DBConstants;
+import main.java.com.parkit.parkingsystem.constants.ParkingType;
+import main.java.com.parkit.parkingsystem.model.ParkingSpot;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

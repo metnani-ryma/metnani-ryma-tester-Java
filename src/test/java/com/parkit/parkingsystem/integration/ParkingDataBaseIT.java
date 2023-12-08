@@ -1,11 +1,12 @@
-package com.parkit.parkingsystem.integration;
+package test.java.com.parkit.parkingsystem.integration;
 
-import com.parkit.parkingsystem.dao.ParkingSpotDAO;
-import com.parkit.parkingsystem.dao.TicketDAO;
-import com.parkit.parkingsystem.integration.config.DataBaseTestConfig;
-import com.parkit.parkingsystem.integration.service.DataBasePrepareService;
-import com.parkit.parkingsystem.service.ParkingService;
-import com.parkit.parkingsystem.util.InputReaderUtil;
+import main.java.com.parkit.parkingsystem.dao.ParkingSpotDAO;
+
+import main.java.com.parkit.parkingsystem.dao.TicketDAO;
+import test.java.com.parkit.parkingsystem.integration.config.DataBaseTestConfig;
+import test.java.com.parkit.parkingsystem.integration.service.DataBasePrepareService;
+import main.java.com.parkit.parkingsystem.service.ParkingService;
+import main.java.com.parkit.parkingsystem.util.InputReaderUtil;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;

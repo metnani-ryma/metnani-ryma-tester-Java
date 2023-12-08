@@ -1,10 +1,10 @@
-package com.parkit.parkingsystem.dao;
+package main.java.com.parkit.parkingsystem.dao;
 
-import com.parkit.parkingsystem.config.DataBaseConfig;
-import com.parkit.parkingsystem.constants.DBConstants;
-import com.parkit.parkingsystem.constants.ParkingType;
-import com.parkit.parkingsystem.model.ParkingSpot;
-import com.parkit.parkingsystem.model.Ticket;
+import main.java.com.parkit.parkingsystem.config.DataBaseConfig;
+import main.java.com.parkit.parkingsystem.constants.DBConstants;
+import main.java.com.parkit.parkingsystem.constants.ParkingType;
+import main.java.com.parkit.parkingsystem.model.ParkingSpot;
+import main.java.com.parkit.parkingsystem.model.Ticket;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -68,6 +68,28 @@ public class TicketDAO {
             return ticket;
         }
     }
+    
+    	public int getNbTicket(String vehicleRegNumber) {
+    	    Connection con = null;
+    	    int ticketCount = 0;
+    	    try {
+    	        con = dataBaseConfig.getConnection();
+    	        PreparedStatement ps = con.prepareStatement(DBConstants.CONT_TICKET);
+    	        ps.setString(1, vehicleRegNumber);
+    	        ResultSet rs = ps.executeQuery();
+    	        if (rs.next()) {
+    	            ticketCount = rs.getInt(1);
+    	        }
+    	        dataBaseConfig.closeResultSet(rs);
+    	        dataBaseConfig.closePreparedStatement(ps);
+    	    } catch (Exception ex) {
+    	        logger.error("Error counting tickets for vehicle: " + vehicleRegNumber, ex);
+    	    } finally {
+    	        dataBaseConfig.closeConnection(con);
+    	        return ticketCount;
+    	    }
+    	}
+
 
     public boolean updateTicket(Ticket ticket) {
         Connection con = null;

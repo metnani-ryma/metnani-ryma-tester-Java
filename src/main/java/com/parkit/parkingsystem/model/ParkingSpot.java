@@ -1,6 +1,6 @@
-package com.parkit.parkingsystem.model;
+package main.java.com.parkit.parkingsystem.model;
 
-import com.parkit.parkingsystem.constants.ParkingType;
+import main.java.com.parkit.parkingsystem.constants.ParkingType;
 
 public class ParkingSpot {
     private int number;
