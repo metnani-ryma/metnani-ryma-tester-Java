@@ -1,5 +1,8 @@
 test\java\com\parkit\parkingsystem\integration\config\DataBaseTestConfig.class
 test\java\com\parkit\parkingsystem\integration\service\DataBasePrepareService.class
+test\java\com\parkit\parkingsystem\integration\config\DataBaseTestConfigTest.class
 test\java\com\parkit\parkingsystem\FareCalculatorServiceTest.class
+test\java\com\parkit\parkingsystem\util\InputReaderUtilTest.class
+test\java\com\parkit\parkingsystem\integration\config\DataBaseConfigTest.class
 test\java\com\parkit\parkingsystem\integration\ParkingDataBaseIT.class
 test\java\com\parkit\parkingsystem\ParkingServiceTest.class
